@@ -1,16 +1,14 @@
 #!/usr/bin/python3
-'''Contains a text_indentation function a TDD project.
-'''
+"""Defines a text-indentation function."""
 
 
 def text_indentation(text):
-    '''Print a text with 2 new line after each of 
-    these characters: '.','?' and ':'
+    """Print text with two new lines after each '.', '?', and ':'.
     Args:
-        text(str): The text to print.
+        text (string): The text to print.
     Raises:
-        TypeError: If the text is not a string.
-    '''
+        TypeError: If text is not a string.
+    """
     if not isinstance(text, str):
         raise TypeError("text must be a string")
 
